@@ -1,0 +1,14 @@
+extends layout
+
+block article
+  div(class="full")
+    section(class="space-vertically")
+      article(class="article-block ph-bloc")
+        div(class="article-heading")
+          h2=title
+          h4=date
+        div(class="article-thumbnail")
+          img(src=img_link)
+        div(class="article-content")
+          p!=markdown
+        button(class="read-more" onclick="location.href='/"+category+"'" type="button") to other articles

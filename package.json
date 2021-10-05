@@ -1,0 +1,30 @@
+{
+  "name": "startuprepeat",
+  "version": "1.0.0",
+  "description": "This is a personal blog for Paul Trettenero",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wholetpaulin/StartupRepeat.git"
+  },
+  "author": "Paul Trettnero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wholetpaulin/StartupRepeat/issues"
+  },
+  "homepage": "https://github.com/Wholetpaulin/StartupRepeat#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "markdown-it": "^12.2.0",
+    "pug": "^3.0.2"
+  }
+}

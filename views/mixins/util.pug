@@ -1,0 +1,10 @@
+// This is a file for mixins, or reusable blocks of pug. (https://pugjs.org/language/mixins.html)
+mixin blog-article(title, img_link, blog_link, content_summary, date)
+  article(class="article-block ph-bloc")
+    div(class="article-heading")
+      h2=title
+      h4=date
+    div(class="article-thumbnail")
+      img(class="article-img" src=img_link alt="Blog Article Thumbnail")
+    p!=content_summary
+    button(class="read-more" onclick=blog_link type="button") continue reading..

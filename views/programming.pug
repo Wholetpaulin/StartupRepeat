@@ -1,0 +1,27 @@
+extends layout
+
+block programming
+  include mixins/util
+  main
+    section(class="space-vertically")
+      // For loop reading and parsing every object with "programming" property. then create a blog-article for each
+      - for(const key in posts) {
+        - if(posts[key].category == "Programming")
+          +blog-article(posts[key].title, posts[key].img_link, "location.href='/programming/" + key + "'", posts[key].summary, posts[key].date)
+      - }
+    section(class="space-vertically")
+      div(class="side-block ph-bloc")
+        h2 Welcome to /programming!
+        p Take a look around. This section has posts relating to all things programming. I'm a full-stack web developer by trade, studied Electrical Engineering for my undergrad, and am currently pursuing my Master's in computer science.
+      div(class="side-block ph-bloc")
+        h2 Resources
+        p If you're trying to learn programming, these are my favorite books and courses:
+        ul
+          li Web Development
+            ul
+              a(class="" href="https://github.com/getify/You-Dont-Know-JS/tree/1st-ed"): li You don't know JS (Free)
+              a(class="" href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/"): li Zero to Mastery (~$15)
+              a(class="" href="https://m.youtube.com/watch?v=SBB1YtwODT0  "): li What you need to learn (YouTube ~30m)
+          li Game Development
+            ul
+              a(class="" href="https://www.udemy.com/user/gamedevtv/"): li gamedevtv on Udemy.com (~$15) 

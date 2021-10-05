@@ -1,0 +1,28 @@
+extends layout
+
+
+block reviews
+  include mixins/util
+  main
+    section(class="space-vertically")
+      article(class="full-blog-block ph-bloc")
+        div(class="article-heading")
+          h2="About"
+        div(class="article-thumbnail")
+          img(src="/images/water_bottle.png")
+        div(class="article-content")
+          p Hi, I'm Paul!  I'm a software engineer with a background in electrical engineering.  I LOVE building and understanding things.  This website is a blog/portfolio to showcase my work and my ideas. 
+          p PS:  I have no sponserships or affiliations so whatever you see here are my honest thoughts and feelings.  
+    section(class="space-vertically")
+      div(class="side-block ph-bloc")
+        h2 Socials
+        p The best/fastest way to reach me is through the socials.  Feel free to connect and say hi! 
+        ul
+          a(class="" href="https://www.linkedin.com/in/paultrettenero/"): li Linkedin
+          a(class="" href="https://twitter.com/PaulTrettenero/"): li Twitter
+          a(class="" href="https://www.reddit.com/user/Wholetpaulin/"): li Reddit
+          a(class="" href="https://facebook.com/paultrettenero/"): li Facebook (I rarely check :p)
+      div(class="side-block ph-bloc")
+        h2 Contact
+        p For professional inquiries, you can reach me at the email below:
+        p paul@startuprepeat

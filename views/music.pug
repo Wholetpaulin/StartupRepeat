@@ -1,0 +1,16 @@
+extends layout
+
+block reviews
+  include mixins/util
+  main
+    section(class="space-vertically")
+      // For loop reading and parsing every object with "Music" category property. then create a blog-article for each
+      - for(const key in posts) {
+        - if(posts[key].category == "Music")
+          +blog-article(posts[key].title, posts[key].img_link, "location.href='/music/" + key + "'", posts[key].summary, posts[key].date)
+      - }
+    section(class="space-vertically")
+      div(class="side-block ph-bloc")
+        h2 Welcome to /music!
+        p Take a look around. This page is a hodge-podge of music content. 
+

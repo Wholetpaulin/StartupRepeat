@@ -1,0 +1,15 @@
+extends layout
+
+block home
+  include mixins/util
+  main
+    section(class="space-vertically")
+      // For loop reading and parsing every post. Then create a blog-article block for each
+      - for(const key in posts) {
+        +blog-article(posts[key].title, posts[key].img_link, "location.href='/" + posts[key].category + "/" + key + "'", posts[key].summary, posts[key].date)
+      - }
+    section(class="space-vertically")
+      div(class="side-block ph-bloc")
+        h2 Welcome to Startup Repeat!
+        p Hi, I'm Paul! This is my blog where I write about tech, music, media, and whatever else pops into my head. 
+        p This page shows all of my posts in order of release.  To filter by category, visit the links at the top of the site.

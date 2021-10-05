@@ -1,0 +1,16 @@
+extends layout
+
+block reviews
+  include mixins/util
+  main
+    section(class="space-vertically")
+      // For loop reading and parsing every object with "random" category property. then create a blog-article for each
+      - for(const key in posts) {
+        - if(posts[key].category == "Random")
+          +blog-article(posts[key].title, posts[key].img_link, "location.href='/random/" + key + "'", posts[key].summary, posts[key].date)
+      - }
+    section(class="space-vertically")
+      div(class="side-block ph-bloc")
+        h2 Welcome to /random!
+        p Take a look around. This page is a hodge-podge of random content. 
+        

@@ -1,0 +1,49 @@
+extends layout
+
+block reviews
+  include mixins/util
+  main
+    section(class="space-vertically")
+      // For loop reading and parsing every object with "Reviews" category property. then create a blog-article for each
+      - for(const key in posts) {
+        - if(posts[key].category == "Reviews")
+          +blog-article(posts[key].title, posts[key].img_link, "location.href='/reviews/" + key + "'", posts[key].summary, posts[key].date)
+      - }
+    section(class="space-vertically")
+      div(class="side-block ph-bloc")
+        h2 Welcome to /reviews!
+        p Take a look around. This page is a collection of pop media reviews including books, games, and film.  My reviews scale from 1 to 10, based the enjoyment each brought me relative to my all time favorites. (Listed below) Disclaimer: An average score is a 5/10, I don't give something a 7 or 8 unless it's #[strong WELL] above average. 
+      div(class="side-block ph-bloc")
+        h2 All Time Favorites
+        p Here are some of my favorite pieces of media.  I consider each of these to be 10/10:
+        ul
+          li Games
+            ul
+              li Board/Card Games
+                ul
+                  a(class="" href="https://www.amazon.com/Here-Slay-Base-Game-Strategic/dp/B085JYYWJV"): li Here to Slay
+              li Video Games
+                ul
+                  a(class="" href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/"): li Deep Rock Galactic
+                  a(class="" href="https://store.steampowered.com/app/646570/Slay_the_Spire/"): li Slay the Spire
+          li Film
+            ul
+              li Movies
+                ul
+                  a(class="" href="https://www.imdb.com/title/tt0111161/"): li Shawshank Redemption
+                  a(class="" href="https://www.imdb.com/title/tt0110912/?ref_=fn_al_tt_1"): li Pulp Fiction
+                  a(class="" href="https://www.imdb.com/title/tt0137523/?ref_=fn_al_tt_1"): li Fight Club
+              li Series
+                ul
+                  a(class="" href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender"): li Avatar: TLA
+          li Books
+            ul
+              li Fantasy
+                ul
+                  a(class="" href="https://en.wikipedia.org/wiki/The_Stormlight_Archive"): li The Stormlight Archive 
+              li Self-Help
+                ul
+                  a(class="" href="https://en.wikipedia.org/wiki/The_4-Hour_Workweek"): li The 4-Hour Workweek 
+          li Podcast
+            ul
+              a(class="" href="https://en.wikipedia.org/wiki/Dan_Carlin#Hardcore_History"): li Hardcore History
