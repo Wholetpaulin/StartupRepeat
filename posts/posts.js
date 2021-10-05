@@ -29,7 +29,7 @@ const posts = {
   'how-this-website-was-built': {
     'title': 'How this Website was Built',
     'date': '9/26/2021',
-    'img_link': '/images/tools.jpg',
+    'img_link': '/images/Tools.jpg',
     'summary': '<p>I started this portfolio/blog with full intentions to use only html, css, and JavaScript.  "Keep things simple", I told myself.  No JavaScript or css frameworks allowed!  I figured rebuilding my portfolio from scratch would be a good opportunity to dust off the ol\' fundamentals...</p>',
     'markdown': md.render(howThisWebsiteWasBuilt),
     'category': 'Programming'
