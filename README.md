@@ -8,8 +8,6 @@ Here's what to expect:
 * A clean responsive website showing off my mad skillz :smile:
 * Rambling blog posts about music, technology, media, and other random things.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
 
 ### Built With
 
