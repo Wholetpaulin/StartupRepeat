@@ -9,7 +9,7 @@ body {
 
 .space-vertically {
   display: block;
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 420px;
   font-family: 'Roboto', sans-serif;
 }
@@ -307,13 +307,13 @@ button.read-more  {
   }
 
   .site-nav {
-    margin-bottom: 210px;
+    margin-bottom: 120px;
   }
 
   .nav-links {
     position: absolute;
     right: 0px;
-    top: 8vh;
+    top: 9vh;
     height: 92vh;
     margin-right: 0px;
     background-color: #000000;

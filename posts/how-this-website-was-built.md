@@ -67,6 +67,9 @@ Any seasoned developer should be sweating right now.  Injecting unescaped code i
 
 So to recap, the following is a flow chart of our simple setup.
 ![flowchart of site setup](/images/flow.png)
+
+To host the node server, I decided to use AWS lightsail. I chose lightsail over digital ocean or another VPS simply because it was cheaper at the time and I'm not expecting heavy traffic. ($3.50/month vs $5/month)  My AWS knowledge was rusty, so I just followed [this tutorial](https://www.youtube.com/watch?v=rtshCulV2hk) to host the server and hook up the DNS.
+
 # Wrapping things up
 
-In the end, our setup doesn't have use a database or any fancy front-end frameworks.  I'll admit, it's ~~a little~~ dirty to read everything from a giant JavaScript file. And it will be a pain to manually update that giant file each time we write a new blog post in markdown, but those are improvements for another day.  If you want to learn more or peek around the site, all of the code is public on github.  Feel free to reach me on the socials with any questions/comments. 
+In the end, our setup doesn't have use a database or any fancy front-end frameworks.  I'll admit, it's ~~a little~~ dirty to read everything from a giant JavaScript file. And it will be a pain to manually update that giant file each time we write a new blog post in markdown, but those are improvements for another day.  If you want to learn more or peek around the site, [all of the code](https://github.com/Wholetpaulin/StartupRepeat) is public on github.  Feel free to reach me on the socials with any questions/comments. 
